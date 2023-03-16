@@ -11,3 +11,44 @@
 	margin: 0 auto;
 	padding: 0 15px;
 }
+.form-row {
+	margin: 10px 0;
+}
+label {
+	/* color: darkblue; */
+}
+
+input:not([type="file"]) {
+	border: 1px solid darkblue;
+	outline: none;
+	padding: 10px;
+	color: red;
+}
+input::placeholder {
+	color: blueviolet;
+}
+
+textarea {
+	outline: none;
+	resize: none;
+	height: 100px;
+	width: 100%;
+}
+select {
+	width: 100%;
+	margin: 10px 0;
+	outline: none;
+	border: 1px solid darkorange;
+}
+input[type="checkbox"],
+input[type="radio"] {
+	accent-color: green;
+}
+span {
+	/* display: none; */
+}
+input:required ~ span::before {
+	content: "required";
+	display: inline-block;
+	color: red;
+}

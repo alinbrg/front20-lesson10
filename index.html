@@ -38,5 +38,111 @@
 			<h1>lesson 10</h1>
 			<!-- https://picsum.photos/id/11/500/300 -->
 		</div>
+
+		<section class="form">
+			<div class="container">
+				<form action="/user" method="get">
+					<!-- <label for="user-name">
+						<span>user name</span>
+						<input
+							type="text"
+							name="username"
+							id="user-name"
+							placeholder="write user name"
+						/>
+					</label> -->
+					<div class="form-row">
+						<label for="user-name"> user name </label>
+						<input
+							type="text"
+							name="username"
+							id="user-name"
+							placeholder="write user name"
+						/>
+					</div>
+					<div class="form-row">
+						<label for="email"> user email </label>
+						<input
+							type="email"
+							name="email"
+							id="email"
+							placeholder="write user email"
+							required
+						/>
+						<span></span>
+					</div>
+
+					<div class="form-row">
+						<label for="password"> password </label>
+						<input
+							type="password"
+							name="sign-in-password"
+							id="password"
+							placeholder="write user password"
+							required
+						/>
+					</div>
+
+					<div class="form-row">
+						<label for="number"> number </label>
+						<input
+							type="number"
+							name="number"
+							id="number"
+							placeholder="write number"
+						/>
+					</div>
+
+					<div class="form-row">
+						<label for="file"> file </label>
+						<input type="file" name="file" id="file" />
+					</div>
+
+					<div class="form-row">
+						<label for="city"> select city </label>
+						<input list="cities" name="city" id="city" />
+						<datalist id="cities">
+							<option value="kutaisi"></option>
+							<option value="tbilisi"></option>
+						</datalist>
+					</div>
+
+					<div class="form-row">
+						<label for="male">
+							<input type="radio" id="male" name="gender" /> male
+						</label>
+						<label for="female">
+							<input type="radio" id="female" name="gender" /> female
+						</label>
+						<label for="other">
+							<input type="radio" id="other" name="gender" /> other
+						</label>
+					</div>
+
+					<div class="form-row">
+						<input type="checkbox" name="read" id="read" />
+						<label for="read"> read </label>
+					</div>
+
+					<div class="form-row">
+						<input type="checkbox" name="agree" id="agree" />
+						<label for="agree"> agree </label>
+					</div>
+
+					<select name="country" id="country">
+						<option value="0">select country</option>
+						<option value="1">georgia</option>
+						<option value="2">germany</option>
+						<option value="3">france</option>
+					</select>
+
+					<div>
+						<textarea name="message" id=""> </textarea>
+					</div>
+
+					<button type="submit">submit</button>
+				</form>
+			</div>
+		</section>
 	</body>
 </html>
